@@ -7,14 +7,36 @@
     <title>Hanzeel Vila</title>
 
     <style>
-        #titulo{
-            background-color: red;
+        html, body{
+            display: flex;
+            height: 100%;
+            flex-direction: column;
         }
-        #borde{
-            border: 10px solid;
+
+        header{
+            display: flex;
+            background-color: black;
+            color: white;
+            height: 20%;
         }
-        h1{
-            background-color: aqua;
+
+        #contenedor_principal{
+            display: flex;
+            background-color: antiquewhite;
+            color: black;
+            height: 60%;
+        }
+
+        .pie_pagina{
+            display: flex;
+            background-color: black;
+            color: white;
+            height: 20%;
+        }
+
+        .lateral{
+            display: flex;
+            background-color: greenyellow;
         }
     </style>
 
@@ -25,29 +47,34 @@
         <nav>
             <ul>
                 <li id="titulo">Principal</li>
-                <li>Información</li>
+                <li>Inicio</li>
+                <li>Nosotros</li>
                 <li>Contacto</li>
-                <li>Iniciar sesión</li>
             </ul>
         </nav>
     </header>
 
-    <div class="container">
-        <aside>
-            <ul>
+    <div id="contenedor_principal" class="contenedor">
+        <section class="principal">
+            <h1>Hanzeelabs (patente pendiente)</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Voluptas maiores obcaecati praesentium. Numquam ullam 
+                eveniet et sint voluptas ea blanditiis. Similique mollitia 
+                quos cum reprehenderit quidem officiis provident nulla ea.
+            </p>
+            <img id="borde" src="/images/WALLE.jpg" alt="WALLE">
+        </section>
+        <aside class="lateral">
+            <ol>
                 <li>Item 1</li>
                 <li>Item 2</li>
                 <li>Item 3</li>
-            </ul>
+            </ol>
         </aside>
-
-        <section>
-            <h1>Página web</h1>
-            <img id="borde" src="/images/WALLE.jpg" alt="WALLE">
-        </section>
     </div>
 
-    <footer>
+    <footer class="pie_pagina">
         <p>Copyright de mi página</p>
     </footer>
 </body>
